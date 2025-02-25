@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./Signup-next.css">
+  <title>Signup-next</title>
+</head>
+<body>
+  <header><%- include("../partials/header.ejs") %></header>
+  <main>
+    <%- include("../partials/sub-nav.ejs") %>
+        <div class="form-container">
+            <h2>Enter your basic information</h2>
+            <form>
+                <div class="input-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div class="input-field">
+                    <input type="date" placeholder="Date of birth">
+                    <span class="calendar-icon">&#128197;</span> <!-- Calendar icon -->
+                </div>
+                <div class="button-group">
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="submit" class="update-btn">Update</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include("../partials/footer.ejs") %>
+
+</body>
+</html>

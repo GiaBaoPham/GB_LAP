@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="/styles/success-order.css" />
+    <title>Order Success</title>
+  </head>
+  <body>
+    <header><%- include("../partials/header.ejs") %></header>
+    <%- include("../partials/sub-nav.ejs") %>
+    <main>
+      <div class="success-container">
+        <div class="success-icon">✔</div>
+        <h1>Order Successful!</h1>
+        <p>
+          Thank you for your purchase. Your order has been placed successfully.
+        </p>
+        <a href="/">Back to Home</a>
+      </div>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+  </body>
+</html>

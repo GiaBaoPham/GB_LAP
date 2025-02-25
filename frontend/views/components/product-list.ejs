@@ -1,0 +1,7 @@
+
+    <link rel="stylesheet" href="/styles/product-card.css" />
+    <div class="trending-list">
+      <% products.forEach(product => { %>
+      <%-include('./product-card.ejs',{product:product}) %> <%}); %>
+    </div>
+

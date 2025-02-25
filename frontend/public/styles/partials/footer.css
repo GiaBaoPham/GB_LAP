@@ -1,0 +1,67 @@
+footer {
+    width: 100%;
+    background-color: black;
+    bottom: 0px;
+    margin-top: 200px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer-container {
+    max-width: 1280px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 2rem;
+  }
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: space-around;
+    row-gap: 1rem;
+  }
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .footer-column strong {
+    line-height: 2.25rem;
+    font-size: 1.875rem;
+  }
+  .footer-column .contact-icons a {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .copyright {
+    opacity: 0.5;
+    font-size: 1.125rem; 
+    line-height: 1.75rem;
+  }
+  @media screen and (min-width: 768px) {
+    .logo a span {
+      display: inline;
+    }
+    .main-nav ul li {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .footer-row {
+      flex-direction: row;
+      row-gap: 0.5rem;
+    }
+    .footer-row ul li {
+      margin-top: 0.5rem;
+    }
+    .footer-row .contact-icons {
+      margin-top: 0.5rem;
+    }
+  }
+

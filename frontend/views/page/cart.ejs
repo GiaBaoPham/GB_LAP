@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Choice Page</title>
+  </head>
+
+  <body>
+    <header><%- include("../partials/header.ejs") %></header>
+    <main>
+      <%- include("../partials/sub-nav.ejs") %>
+      <div class="breadcrumb-container">
+        <nav class="breadcrumb">
+          <a class="home" href="/">Home</a> /
+          <a class="cart" href="#">Cart</a>
+        </nav>
+      </div>
+      <div class="welcome">
+        Welcome! <span class="customer-name"><%= user.username %></span>
+      </div>
+      <div class="cart-container">
+        <div class="cart-header">Cart</div>
+        <% cartItems.forEach(cartItem => { %>
+        <div class="cart-item">
+          <img
+            src="/images/products/<%= cartItem.product.category.name %>/<%= cartItem.product.imgName %>"
+            alt="Product Image"
+            onclick="moveToDetailProduct('<%= cartItem.product._id%> ')"
+          />
+          <div class="cart-item-details" onclick="moveToDetailProduct('<%= cartItem.product._id%> ')">
+            <h4><%= cartItem.product.name %></h4>
+            <p>
+              Price: <%= cartItem.product.price.toLocaleString('vi-VN')+"VND" %>
+            </p>
+            <p class="total-price-item">
+              Total price: <%= cartItem.totalPrice.toLocaleString('vi-VN')+"VND"%>
+            </p>
+          </div>
+          <div class="cart-item-actions">
+            <button class="decrease" onclick="addToCart('<%= cartItem.product._id%>',-1)">-</button>
+            <input
+              type="number"
+              class="quantity"
+              value="<%= cartItem.quantity %>"
+              readonly
+            />
+            <button class="increase" onclick="addToCart('<%= cartItem.product._id%>',1)">+</button>
+            <button class="delete-button" onclick="removeFromCart('<%= cartItem.product._id%>')">Remove</button>
+          </div>
+        </div>
+        <% }) %>
+         <% const totalSum = cartItems.reduce((sum, item) => sum +item.totalPrice, 0); %>
+        <div class="cart-footer">
+          Sum:
+          <strong id="total-price"
+            ><%= totalSum.toLocaleString('vi-VN')+" VND" %></strong
+          >
+        </div>
+      </div>
+      <!-- <div class="multi-choice-product">
+
+            <div class="choice-product">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+    
+                <div class="cart-product-info">
+                    <img src="Pic/macbook.webp" class="product-image">
+                    <div class="product-details">
+                        <div class="product-name">MacBook Pro 14 inch 2021</div>
+                        <div class="product-price">36,900,000 VND</div>
+                    </div>
+                </div>
+    
+                <div class="change-quantity-remove-product">
+                    <div class="remove-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                            <path fill="black" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6zM8 9h8v10H8zm7.5-5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </div>
+                    <div class="change-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-number">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choice-product">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+    
+                <div class="cart-product-info">
+                    <img src="Pic/macbook.webp" class="product-image">
+                    <div class="product-details">
+                        <div class="product-name">MacBook Pro 14 inch 2021</div>
+                        <div class="product-price">36,900,000 VND</div>
+                    </div>
+                </div>
+    
+                <div class="change-quantity-remove-product">
+                    <div class="remove-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                            <path fill="black" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6zM8 9h8v10H8zm7.5-5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </div>
+                    <div class="change-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-number">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choice-product">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+    
+                <div class="cart-product-info">
+                    <img src="Pic/macbook.webp" class="product-image">
+                    <div class="product-details">
+                        <div class="product-name">MacBook Pro 14 inch 2021</div>
+                        <div class="product-price">36,900,000 VND</div>
+                    </div>
+                </div>
+    
+                <div class="change-quantity-remove-product">
+                    <div class="remove-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                            <path fill="black" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6zM8 9h8v10H8zm7.5-5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </div>
+                    <div class="change-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-number">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choice-product">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+    
+                <div class="cart-product-info">
+                    <img src="Pic/macbook.webp" class="product-image">
+                    <div class="product-details">
+                        <div class="product-name">MacBook Pro 14 inch 2021</div>
+                        <div class="product-price">36,900,000 VND</div>
+                    </div>
+                </div>
+    
+                <div class="change-quantity-remove-product">
+                    <div class="remove-product">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                            <path fill="black" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6zM8 9h8v10H8zm7.5-5l-1-1h-5l-1 1H5v2h14V4z" />
+                        </svg>
+                    </div>
+                    <div class="change-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-number">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+      <div class="buy-now">
+        <button class="buy-now-button" onclick="moveToOrder()">Buy Now</button>
+      </div>
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
+  </body>
+  <script src="/scripts/add-to-cart.js"></script>
+  <script src="/scripts/move-to-detail.js"></script>
+  <script src="/scripts/move-to-order.js"></script>
+</html>

@@ -1,0 +1,561 @@
+[
+  {
+    "products_laptop": [
+      {
+        "name": "asus-vivobook-go-15-e1504fa-r5-nj776w",
+        "price": 12590000,
+        "imgName": "asus-vivobook-go-15-e1504fa-r5-nj776w-thumb-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "asus",
+        "description": {
+          "Ram": "8GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "dell-inspiron-15-3520-i5-n5i5052w1",
+        "price": 18590000,
+        "imgName": "dell-inspiron-15-3520-i5-n5i5052w1-thumb-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "dell",
+        "description": {
+          "Ram": "8GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "hp-15-fd0234tu-i5-9q969pa",
+        "price": 16590000,
+        "imgName": "hp-15-fd0234tu-i5-9q969pa-thumb-1-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "hp",
+        "description": {
+          "Ram": "8GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "hp-15-fd0234tu-i5-9q969pa",
+        "price": 16590000,
+        "imgName": "hp-15-fd0234tu-i5-9q969pa-thumb-1-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "hp",
+        "description": {
+          "Ram": "8GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "lenovo-ideapad-slim-3-15iah8-i5-83er00evn",
+        "price": 19590000,
+        "imgName": "lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "lenovo",
+        "description": {
+          "Ram": "8GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "mba13-midnight-select-202402",
+        "price": 32490000,
+        "imgName": "mba13-midnight-select-202402.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "apple",
+        "description": {
+          "Ram": "16GB",
+          "ROM": "512GB",
+          "color": "Gray"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "msi-cyborg-15-a13vfk-i7-876vn",
+        "price": 27490000,
+        "imgName": "msi-cyborg-15-a13vfk-i7-876vn-thumb-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "hp",
+        "description": {
+          "CPU": "i7-13620",
+          "Ram": "16GB",
+          "ROM": "512GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "acer-nitro-an515-58-773y-i7-12700h-nhqfksv00116g-260824-111846",
+        "price": 22990000,
+        "imgName": "acer-nitro-an515-58-773y-i7-12700h-nhqfksv00116g-260824-111846-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "acer",
+        "description": {
+          "CPU": "i7-12700H",
+          "Ram": "16GB",
+          "ROM": "512GB",
+          "GPU": "RTX_3050_4Gb"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "samsung-galaxy-chromebook-go-xe340xda-n4500",
+        "price": 8990000,
+        "imgName": "samsung-galaxy-chromebook-go-xe340xda-n4500-thumb-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "acer",
+        "description": {
+          "Ram": "4GB",
+          "CPU": "Celeron - N4500",
+          "ROM": "32GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "lg-gram-style-2023-i5-14z90rsgah54a5",
+        "price": 32490000,
+        "imgName": "lg-gram-style-2023-i5-14z90rsgah54a5-thumb-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "lenovo",
+        "description": {
+          "Ram": "16GB",
+          "CPU": "i5-1340P",
+          "ROM": "512GB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "huawei-matebook-d-15-r5-bohwaq9r-250520-020512",
+        "price": 20590000,
+        "imgName": "huawei-matebook-d-15-r5-bohwaq9r-250520-020512-600x600.jpg",
+        "category": "6752ff21fc86289904a6f379",
+        "brand": "hp",
+        "description": {
+          "Ram": "8GB",
+          "CPU": "R5-3500",
+          "ROM": "512GB"
+        },
+        "isFeatured": false
+      }
+    ]
+  },
+  {
+    "products_keyboard": [
+      {
+        "name": "ban-phim-co-11518_xiberia_xs3100",
+        "price": 790000,
+        "imgName": "ban-phim-co-11518_xiberia_xs3100.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "hp",
+        "description": {
+          "Tính Năng": "Thiết kế gọn nhẹ, đèn LED nổi bật"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-akko-3098b-multi-modes-neon-ava-akkovn",
+        "price": 2350000,
+        "imgName": "ban-phim-co-akko-3098b-multi-modes-neon-ava-akkovn.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "dell",
+        "description": {
+          "Tính Năng": "Hỗ trợ đa kết nối, hiệu ứng Neon đẹp mắt"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-akko-3108-rf-dragon-ball-z-goku",
+        "price": 2600000,
+        "imgName": "ban-phim-co-akko-3108-rf-dragon-ball-z-goku.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "acer",
+        "description": {
+          "Tính Năng": "Phiên bản giới hạn Dragon Ball Z"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-applemagickeyboard2",
+        "price": 3300000,
+        "imgName": "ban-phim-co-applemagickeyboard2.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "apple",
+        "description": {
+          "Tính Năng": "Thiết kế mỏng nhẹ, kết nối Bluetooth"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-aula-f3032",
+        "price": 1500000,
+        "imgName": "ban-phim-co-aula-f3032.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "apple",
+        "description": {
+          "Tính Năng": "LED RGB, phản hồi phím nhanh"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-Dareu-EK87L-V2-Khôn",
+        "price": 1100000,
+        "imgName": "ban-phim-co-Dareu-EK87L-V2-Khôn.png",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "dell",
+        "description": {
+          "Tính Năng": "Switch bền bỉ, hiệu suất cao"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-gaming-aula-s2022",
+        "price": 1250000,
+        "imgName": "ban-phim-co-gaming-aula-s2022.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "asus",
+        "description": {
+          "Tính Năng": "Thiết kế cho game thủ, LED RGB"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-keychron-k10",
+        "price": 2900000,
+        "imgName": "ban-phim-co-keychron-k10.jpg",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "lenovo",
+        "description": {
+          "Tính Năng": "Hỗ trợ Mac và Windows, kết nối không dây"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-khong-day-aula-f75-pro-v2-thunder-black",
+        "price": 1800000,
+        "imgName": "ban-phim-co-khong-day-aula-f75-pro-v2-thunder-black.png",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "asus",
+        "description": {
+          "Tính Năng": "Không dây tiện lợi, switch bền"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ban-phim-co-khong-day-aula-f75",
+        "price": 1750000,
+        "imgName": "ban-phim-co-khong-day-aula-f75.png",
+        "category": "6752ff31fc86289904a6f37b",
+        "brand": "asus",
+        "description": {
+          "Tính Năng": "Dung lượng pin cao, thiết kế chắc chắn"
+        },
+        "isFeatured": false
+      }
+    ]
+  },
+  {
+    "products_headphone": [
+      {
+        "name": "Sony WH-1000XM4",
+        "price": 4990000,
+        "imgName": "sony-wh-1000xm4-600x600.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "hp",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth 5.0",
+          "BatteryLife": "38 hours",
+          "NoiseCancellation": "Active Noise Cancellation (ANC)"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "JBL Tune 670NC",
+        "price": 2190000,
+        "imgName": "jbl-tune-670nc-600x600.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "hp",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth 5.3",
+          "BatteryLife": "70 hours",
+          "NoiseCancellation": "ANC"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Bose QuietComfort 45",
+        "price": 6490000,
+        "imgName": "bose-quietcomfort-45-600x600.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "asus",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth 5.1",
+          "BatteryLife": "24 hours",
+          "NoiseCancellation": "ANC"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Audio-Technica ATH-M50xBT2",
+        "price": 4890000,
+        "imgName": "audio-technica-ath-m50xbt2-600x600.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "asus",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth 5.0",
+          "BatteryLife": "50 hours",
+          "NoiseCancellation": "Passive"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Apple AirPods Max 2024",
+        "price": 12990000,
+        "imgName": "apple-airpods-max-2024-600x600.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "apple",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth 5.0",
+          "BatteryLife": "20 hours",
+          "NoiseCancellation": "ANC"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Anker Soundcore Life Q30",
+        "price": 1990000,
+        "imgName": "anker-soundcore-life-q30.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "apple",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth",
+          "BatteryLife": "40 hours",
+          "NoiseCancellation": "ANC"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Sennheiser HD 560S",
+        "price": 4990000,
+        "imgName": "sennheiser-hd-560s.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "dell",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Wired",
+          "Impedance": "120 Ohms",
+          "FrequencyResponse": "6Hz–38kHz"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "HyperX Cloud II Wireless",
+        "price": 3591000,
+        "imgName": "hyperx-cloud-ii-wireless.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "dell",
+        "description": {
+          "Type": "Over-ear",
+          "Connectivity": "Bluetooth",
+          "BatteryLife": "30 hours",
+          "NoiseCancellation": "Passive"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Beats Solo3 Wireless",
+        "price": 4990000,
+        "imgName": "beats-solo3-wireless.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "lenovo",
+        "description": {
+          "Type": "On-ear",
+          "Connectivity": "Bluetooth 4.0",
+          "BatteryLife": "40 hours",
+          "NoiseCancellation": "Passive"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Plantronics Voyager 5200",
+        "price": 2490000,
+        "imgName": "plantronics-voyager-5200.jpg",
+        "category": "675fd027c37dc42b330b52f2",
+        "brand": "lenovo",
+        "description": {
+          "Type": "In-ear",
+          "Connectivity": "Bluetooth 5.0",
+          "BatteryLife": "7 hours",
+          "NoiseCancellation": "ANC"
+        },
+        "isFeatured": false
+      }
+    ]
+  },
+  {
+    "products_mouse": [
+      {
+        "name": "Logitech G502 HERO",
+        "price": 899000,
+        "imgName": "g502_hero_hangchinhhieu_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "hp",
+        "description": {
+          "Microprocessor": "32-bit ARM",
+          "Sensor": "HERO",
+          "Mouse type": "Wire mouse",
+          "Response speed": "1ms"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Zadez G-151M",
+        "price": 179000,
+        "imgName": "chuot-gaming-zadez-g-151m_961fec36a9ee4195b6c27d775c469e12_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "hp",
+        "description": {
+          "Sensor": "Sunplus Inst A704F",
+          "Mouse type": "Wire mouse",
+          "Response speed": "1ms",
+          "Acceleration": "15 G/sec",
+          "Scan frequency": "6000 FPS"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "DareU LM115G Multi-Color",
+        "price": 219000,
+        "imgName": "01-min_0a7794d6b8d14aed9fa35e3ff305a47e_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "asus",
+        "description": {
+          "Sensor": "1600DPI",
+          "Mouse type": "Wireless mouse",
+          "Wave": "2.4 GHz Wireless",
+          "Connection distance": "10 m",
+          "How to connect": "USB Receiver",
+          "Battery": "01* AA"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Silent Zadez M-381Z",
+        "price": 269000,
+        "imgName": "zadez_m381z_2_551cc26cf59149488dc14bbb52f9ca0a_1024x1024 (1).jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "asus",
+        "description": {
+          "Sensor": "Pixart 3065",
+          "Mouse type": "Wireless mouse",
+          "Battery": "650 mAh",
+          "Charging port": "Type-C / USB-C"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Lenovo ThinkPad Wireless",
+        "price": 290000,
+        "imgName": "chuot_thinkpad-1_31b48255864441a6a0bcd9e59c713d9d_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "lenovo",
+        "description": {
+          "Mouse type": "Wireless mouse",
+          "Battery": "AA",
+          "Wave": "2.4 GHz Wireless",
+          "Sensor": "1600DPI",
+          "Connection distance": "10 m"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Rapoo V300W",
+        "price": 749000,
+        "imgName": "chuot-gaming-rapoo-v300w_caa55ee7c51a43b0bcfc563e16b3c336_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "lenovo",
+        "description": {
+          "Mouse type": "Wireless mouse",
+          "DPI": "16000DPI",
+          "acceleration": "50G",
+          "Sensor": "PAW3335",
+          "IPS": "400"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "ASUS Marshmallow Mouse MD100",
+        "price": 749000,
+        "imgName": "chuot-bluetooth-asus-marshmallow-md100_66b70b0a05c34156b885a0c4a190b92a_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "asus",
+        "description": {
+          "Connectivity": "Wireless ,RF 2.4GHz,Bluetooth",
+          "RF Distance": "10m",
+          "DPI": "16000DPI",
+          "Battery": "01* AA"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Razer Basilisk V3 Wired (RZ01-04000100-R3M1)",
+        "price": 980000,
+        "imgName": "basilisk_v3_-_ergonomic_wired_gaming_mouse_9cf2bfd587bf4a509b84e56cee70d7af_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "asus",
+        "description": {
+          "Mouse type": "Wire mouse",
+          "Sensor": "Razer 5G Advanced 18K DPI Optical Sensor",
+          "DPI": "18000 DPI",
+          "Battery": "AA"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Corsair M55 Black (CH-931F000-AP)",
+        "price": 1090000,
+        "imgName": "86392_chuot_gaming_khong_day_corsair_m55_black_ch_931f000_ap_1_312ebef2e098484f8556e34b251f3090_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "dell",
+        "description": {
+          "Mouse type": "Wireless mouse",
+          "Sensor": "Optical",
+          "DPI": "24000 DPI",
+          "Response speed": "1000Hz ( 1ms )"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "HP 930 Creator (1D0K9AA)",
+        "price": 2190000,
+        "imgName": "02-min_f2e9549b10f04310a558c835aefea41f_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "dell",
+        "description": {
+          "Mouse type": "Wireless mouse",
+          "DPI": "4000DIP",
+          "Security": "AES 128 bit",
+          "Battery": "Li-ion"
+        },
+        "isFeatured": false
+      },
+      {
+        "name": "Corsair Nightsabre RGB (CH-931B011-AP)",
+        "price": 3790000,
+        "imgName": "untitled-1_fb175a0a955f48c9bbeaadfd641ee222_grande.jpg",
+        "category": "6752ff3dfc86289904a6f37d",
+        "brand": "acer",
+        "description": {
+          "Mouse type": "Wireless mouse",
+          "Sensor": "Optical",
+          "LEB": "RBG",
+          "Guarantee": "2Y"
+        },
+        "isFeatured": false
+      }
+    ]
+  }
+]

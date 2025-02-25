@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/order.css" />
+    <title>Order</title>
+  </head>
+  <body>
+    <header><%- include("../partials/header.ejs") %></header>
+    <main>
+      <%- include("../partials/sub-nav.ejs") %>
+      <div class="breadcrumb-container">
+        <nav class="breadcrumb">
+          <a class="home" href="/">Home</a> /
+          <a class="cart" href="#">Order</a>
+        </nav>
+      </div>
+      <div class="welcome">
+        Welcome! <span class="customer-name"><%= user.username %></span>
+      </div>
+      <form class="order-from" action="/order" method="POST">
+        <div class="order-detail">
+          <h3>Order Details</h3>
+          <div class="input-field">
+            <label>Full Name</label>
+            <input
+              type="text"
+              placeholder="Input your full name"
+              name="fullName"
+              required
+            />
+          </div>
+          <div class="input-field23">
+            <div class="input-field2">
+              <label>Phone Number</label>
+              <input
+                type="text"
+                placeholder="Input your number phone"
+                name="phoneNumber"
+                required
+              />
+            </div>
+            <div class="input-field3">
+              <label>Address</label>
+              <input
+                type="text"
+                placeholder="Input your address"
+                name="address"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <% cartItems.forEach(cartItem => { %>     
+            <div class="order-item">
+              <img src="/images/products/<%= cartItem.product.category.name %>/<%= cartItem.product.imgName %>" />
+              <div class="order-item-details">
+                <h4><%= cartItem.product.name %></h4>
+                <p >x<%= cartItem.quantity %></p>
+              </div>
+              <div class="order-item-price"><%= cartItem.totalPrice.toLocaleString('vi-VN')+" VND" %></div>
+            </div>
+          <% }) %>
+          <div class="summary-footer">
+            <div class="summary-line">
+              <span>Grand Total</span>
+              <% const totalSum = cartItems.reduce((sum, item) => sum +item.totalPrice, 0); %>
+              <span class="total-price"><%= totalSum.toLocaleString('vi-VN')+" VND" %></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrpayment">
+          <div class="payment-options">
+            <label
+              ><input type="radio" name="paymentMethod" value="credit_card" />
+              Credit card</label
+            >
+            <label
+              ><input type="radio" name="paymentMethod" value="paypal" />
+              Paypal</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="paymentMethod"
+                value="cash_on_delivery"
+                checked
+              />
+              Cash on delivery</label
+            >
+          </div>
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Order</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <%- include("../partials/footer.ejs") %>
+  </body>
+  <script src="/scripts/order.js"></script>
+</html>

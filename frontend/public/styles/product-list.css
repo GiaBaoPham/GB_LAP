@@ -1,0 +1,28 @@
+.product-list {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.product-list .list-name {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 1rem;
+}
+.products-container {
+  max-height: 425px;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.product-list .more-btn {
+  display: flex;
+  justify-content: center;
+}
+.product-list .more-btn a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}

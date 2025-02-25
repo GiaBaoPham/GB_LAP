@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <header><%- include("../partials/header.ejs") %></header>
+    <%- include("../partials/sub-nav.ejs") %>
+    <div class="login-container">
+      <h2>Login to your account</h2>
+      <form action="/api/av1/user/login" method="post" autocomplete="off">
+        <% if (error.length > 0) { %>
+        <div class="error-message" id="flashMessage"><%= error %></div>
+        <% } %>
+        <div class="input-group">
+          <input
+            type="text"
+            name="email"
+            placeholder="Email address"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <span class="password-toggle" id="showPassword-btn">&#128065;</span>
+        </div>
+        <!-- <a href="#" class="forgot-password">Forgot Password?</a> -->
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <p class="create-account">
+        Don't have an account yet? <a href="/register">Create one</a>
+      </p>
+    </div>
+
+    <%- include("../partials/footer.ejs") %>
+  </body>
+  <script src="/scripts/login.js"></script>
+</html>
