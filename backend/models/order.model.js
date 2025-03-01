@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { product } = require(".");
 
 const orderSchema = new mongoose.Schema({
   user: {
@@ -39,12 +38,12 @@ const orderSchema = new mongoose.Schema({
   },
   shippingAddress: {
     type: String,
-    require: true,
+    required: true, // ✅ Sửa lỗi chính tả
   },
   dateOrdered: {
     type: Date,
-    require: true,
-    default: Date.now(),
+    required: true,
+    default: Date.now, // ✅ Sửa lỗi gọi hàm
   },
 });
 

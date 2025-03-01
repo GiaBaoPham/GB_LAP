@@ -36,7 +36,7 @@ app.use(
     resave: false,
     store: MongoStore.create({
       client: mongoose.connection.getClient(),
-      dbName: "Lapshop",
+      dbName: "User_data",
       collectionName: "session",
       ttl: 60 * 60 * 24 * 14,
       autoRemove: "native",

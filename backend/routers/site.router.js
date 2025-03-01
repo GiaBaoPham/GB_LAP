@@ -18,7 +18,7 @@ const api = process.env.API_URL;
 router.route("/").get(async (req, res) => {
   const baseUrl = `${req.protocol}://${req.get("host")}${req.baseUrl}`;
   const apiUrl = `${baseUrl}${api}`;
-  const products = await fetch(`${apiUrl}/product`, {
+  let products = await fetch(`${apiUrl}/product`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -26,6 +26,7 @@ router.route("/").get(async (req, res) => {
   })
     .then((data) => data.json())
     .catch((err) => console.log(err));
+  console.log(products);
   res.render("page/homepage.ejs", { products: products });
 });
 router.route("/product-detail/:id").get(async (req, res) => {
